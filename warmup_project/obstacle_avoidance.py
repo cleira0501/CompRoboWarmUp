@@ -22,6 +22,7 @@ class ObstacleAvoidanceNode(Node):
         self.create_subscription(LaserScan, 'scan',self.process_scan, 10)
         self.linear_velocity = 0.2
         self.angular_velocity = 0.2
+        self.current_vel = Twist()
         self.timer = self.create_timer(0.1, self.run_loop)
 
     def process_scan(self,msg):
@@ -82,7 +83,6 @@ class ObstacleAvoidanceNode(Node):
 
     def run_loop(self, ):
         self.publisher.publish(self.current_vel)
-
 
 
 def main(args=None):

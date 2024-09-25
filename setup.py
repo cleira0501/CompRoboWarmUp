@@ -23,7 +23,7 @@ setup(
             'teleop = warmup_project.teleop:main',
             'drive_square = warmup_project.drive_square:main',
             'obstacle_avoidance = warmup_project.obstacle_avoidance:main',
-            'finite_state_controller = warmup_project.finite_state_controller:main'
+            'finite_state_controller = warmup_project.finite_state_controller:main',
             'wall_follower = warmup_project.wall_follower:main',
             'person_follower = warmup_project.person_follower:main',
         ],
